@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Rakesh</title>
+    <link rel="stylesheet" href="style5.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    
+    <!--boxicon link-->
+    <link rel="stylesheet"
+    href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+
+    <!--remixicons link-->
+    <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css"
+    rel="stylesheet">
+
+    <!--google fronts  link-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Goblin+One&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Slab:wght@100;200;300&display=swap" rel="stylesheet">
+    
+</head>
+<body>
+  <header>
+    <a href='#'class="logo">COD-MOBILE</a>
+    <ul class="navlist">
+      <li><a href="#">Home</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Clans</a></li>
+      <li><a href="#">BR-Rank</a></li>
+      <li><a href="#">Multiplayer</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+
+    <!-- generate icon-->
+    <div class="bx bx-menu" id="menu-icon">
+    </div>
+  </header>
+
+
+
+  <div class="container"id="singUp"style="display:none;">
+    <h1 class="from-title">Register</h1>
+    <form method="post" action="step3.php">
+      <div class="input-group">
+        <i class="fas fa-user"></i>
+        <input type="text"name="FName"id="FName" placeholder="First Name">
+        <label for="FName">First Name</label>
+      </div>
+      <div class="input-group">
+        <i class="fas fa-user"></i>
+        <input type="text"name="LName"id="LName" placeholder="Last Name">
+        <label for="LName">Last Name</label>
+      </div>
+      <div class="input-group">
+        <i class="fas fa-envelope"></i>
+        <input type="email" name="Email"id="Email" placeholder="Email">
+        <label for="Email">Email</label>
+
+      </div>
+      <div class="input-group">
+        <i class="fas fa-lock"></i>
+        <input type="password"name="Password"id="Password" required>
+        <label for="Password">Password</label>
+
+      </div>
+      <input type="submit"class="btn"value="sing up" name ="sing up">
+     
+    </form>
+     
+    <p class="or">
+      --------------or----------
+
+    </p>
+    <div class="icon">
+        <i class="fab fa-google"></i>
+        <i class="fab fa-facebook"></i>
+    </div>
+    <div class="link">
+      <p>Already Have Account ?</p>
+      <button id="singInButton">sing In</button>
+    </div>
+  </div>
+
+
+
+  <div class="container"id="singIn">
+    <h1 class="from-title">Sing In</h1>
+    <form method="post" action="step3.php">
+      
+      <div class="input-group">
+        <i class="fas fa-envelope"></i>
+        <input type="email"name="Email"id="Email" placeholder="Email">
+        <label for="Email">Email</label>
+
+      </div>
+      <div class="input-group">
+        <i class="fas fa-lock"></i>
+        <input type="password"name="Password"id="Password" required>
+        <label for="Password">Password</label>
+
+      </div>
+      <p class="recover">
+        <a href='#'>Recover Password</a>
+      </p>
+      <input type="submit"class="btn"value="sing In" name ="sing In">
+     
+    </form>
+     
+    <p class="or">
+      --------------or----------
+
+    </p>
+    <div class="icon">
+        <i class="fab fa-google"></i>
+        <i class="fab fa-facebook"></i>
+    </div>
+    <div class="link">
+      <p>Don't Have Account yet?</p>
+      <button id="singUpButton">sing Up</button>
+    </div>
+  </div>
+  <script src="script5.js">
+
+  </script>
+</body>
+</html>
